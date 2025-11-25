@@ -42,11 +42,52 @@ source venv/bin/activate     # on Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 
-## Installation & Setup (continued)
-
 Then, depending on the interface:
 
-### For desktop GUI:
-```bash
+For desktop GUI:
 python desktop_app.py
+
+For terminal/dashboard mode (if implemented):
+python dashboard.py
+
+
+(Update the entry-point scripts if they differ in your project.)
+
+Usage
+
+Once launched, the dashboard will start collecting system metrics and render them visually in real time. You can monitor:
+
+CPU usage and load
+
+Memory usage / swap usage
+
+Disk usage and I/O
+
+Optional: network statistics or processes
+
+Testing
+
+Run test scripts to ensure basic functionality:
+
+python test_ctk.py
+python test_shutil.py
+
+
+Or use pytest if installed:
+
+pytest
+
+Roadmap / Future Work
+
+Add network monitoring (bandwidth, interface stats)
+
+Add alerting for thresholds (e.g., high CPU, low disk)
+
+Provide cross-platform installers or Docker support
+
+Support historical logging and graphs over time
+
+Contributing
+
+Feel free to fork the repo and open a pull request with improvements, bug fixes, or new features. Follow existing code style, update requirements.txt for new dependencies, and include tests for new functionality.
 
