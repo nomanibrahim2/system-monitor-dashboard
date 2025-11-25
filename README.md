@@ -40,7 +40,7 @@ cd system-monitor-dashboard
 python -m venv venv          # optional but recommended
 source venv/bin/activate     # on Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 
 Then, depending on the interface:
 
@@ -53,9 +53,9 @@ python dashboard.py
 
 (Update the entry-point scripts if they differ in your project.)
 
-Usage
+## Usage
 
-Once launched, the dashboard will start collecting system metrics and render them visually in real time. You can monitor:
+-Once launched, the dashboard will start collecting system metrics and render them visually in real time. You can monitor:
 
 CPU usage and load
 
@@ -65,29 +65,31 @@ Disk usage and I/O
 
 Optional: network statistics or processes
 
-Testing
+## Testing
 
-Run test scripts to ensure basic functionality:
+-Run test scripts to ensure basic functionality:
 
+```bash
 python test_ctk.py
 python test_shutil.py
-
+```
 
 Or use pytest if installed:
 
+```
 pytest
+```
+## Roadmap / Future Work
 
-Roadmap / Future Work
+-Add network monitoring (bandwidth, interface stats)
 
-Add network monitoring (bandwidth, interface stats)
+-Add alerting for thresholds (e.g., high CPU, low disk)
 
-Add alerting for thresholds (e.g., high CPU, low disk)
+-Provide cross-platform installers or Docker support
 
-Provide cross-platform installers or Docker support
+-Support historical logging and graphs over time
 
-Support historical logging and graphs over time
+## Contributing
 
-Contributing
-
-Feel free to fork the repo and open a pull request with improvements, bug fixes, or new features. Follow existing code style, update requirements.txt for new dependencies, and include tests for new functionality.
+-Feel free to fork the repo and open a pull request with improvements, bug fixes, or new features. Follow existing code style, update requirements.txt for new dependencies, and include tests for new functionality.
 
