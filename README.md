@@ -40,3 +40,13 @@ cd system-monitor-dashboard
 python -m venv venv          # optional but recommended
 source venv/bin/activate     # on Windows: venv\Scripts\activate
 pip install -r requirements.txt
+
+
+## Installation & Setup (continued)
+
+Then, depending on the interface:
+
+### For desktop GUI:
+```bash
+python desktop_app.py
+
