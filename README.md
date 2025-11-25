@@ -22,7 +22,7 @@
 - Lightweight dependencies.
 
 ## Technologies
-- Python 3.x
+- Python 3.12.4
 - GUI / Web framework (Tkinter, Flask, or Streamlit)
 - Python libraries: psutil, shutil, os, etc.
 - See `requirements.txt` for full dependencies.
